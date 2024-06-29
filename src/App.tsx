@@ -1,15 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import FolderList from './components/FolderList';
+import BookList from './components/BookList';
+import Books from './static_data/Books';
 
-function App() {
-  return (
-    
-    <h1 className = "text-3xl font-bold underline">
-      Hello world!!!
-    </h1>
+class App extends Component {
+  render(){
 
-  );
+      return(
+        
+        <BookList books={Books} />
+        
+      )
+  }
 }
 
 export default App;
+
